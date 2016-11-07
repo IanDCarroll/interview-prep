@@ -24,4 +24,7 @@ import datetime
 
 
 class TimeStringApplication(object):
-    pass
+    def mr_fusion(self):
+        power = "1.21 gigawatts!"
+        print power
+        return power
