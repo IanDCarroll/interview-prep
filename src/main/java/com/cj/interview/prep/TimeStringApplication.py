@@ -25,4 +25,6 @@ import datetime
 
 class TimeStringApplication(object):
     def flux_capacitor(self, time_string):
+        time_array = time_string.split(' ')
+        print time_array
         return time_string
