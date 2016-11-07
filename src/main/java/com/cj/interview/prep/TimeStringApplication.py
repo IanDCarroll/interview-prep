@@ -32,6 +32,6 @@ class TimeStringApplication(object):
             raw_seconds += int(time_unit[0]) * 60
         seconds = str(raw_seconds % 60)
         minutes = str(raw_seconds / 60 % 60)
-        hours = str(raw_seconds / 60 / 60 % 60)
+        hours = str(raw_seconds / 3600 % 60)
         temporal_conversion = hours + ":" + minutes + ":" + seconds
         return temporal_conversion
