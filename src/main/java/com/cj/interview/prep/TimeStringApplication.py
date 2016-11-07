@@ -1,4 +1,3 @@
-import datetime
 
 '''
 ## Goal
@@ -31,8 +30,8 @@ class TimeStringApplication(object):
             time_unit = time_array[i].split(':')
             raw_seconds += int(time_unit[1])
             raw_seconds += int(time_unit[0]) * 60
-        seconds = raw_seconds % 60
-        minutes = raw_seconds / 60 % 60
-        hours = raw_seconds / 60 / 60 % 60      
-        print seconds, minutes, hours
-        return time_string
+        seconds = str(raw_seconds % 60)
+        minutes = str(raw_seconds / 60 % 60)
+        hours = str(raw_seconds / 60 / 60 % 60)
+        temporal_conversion = hours + ":" + minutes + ":" + seconds
+        return temporal_conversion
