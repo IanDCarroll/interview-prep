@@ -26,5 +26,10 @@ import datetime
 class TimeStringApplication(object):
     def flux_capacitor(self, time_string):
         time_array = time_string.split(' ')
-        print time_array
+        seconds = 0
+        for i in range(0, len(time_array)):
+            time_unit = time_array[i].split(':')
+            seconds += int(time_unit[1])
+            seconds += int(time_unit[0]) * 60
+        print seconds
         return time_string
