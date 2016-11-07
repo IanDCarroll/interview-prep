@@ -24,7 +24,5 @@ import datetime
 
 
 class TimeStringApplication(object):
-    def mr_fusion(self):
-        power = "1.21 gigawatts!"
-        print power
-        return power
+    def flux_capacitor(self, time_string):
+        return time_string
