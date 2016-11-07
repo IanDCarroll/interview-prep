@@ -23,6 +23,7 @@
 
 
 class TimeStringApplication(object):
+
     def raw_second_converter(self, raw_seconds):
         seconds_in_a_minute = 60
         seconds_in_an_hour = 3600
@@ -34,7 +35,6 @@ class TimeStringApplication(object):
 
 
     def flux_capacitor(self, time_string):
-
         time_array = time_string.split(' ')
         raw_seconds = 0
         for i in range(0, len(time_array)):
