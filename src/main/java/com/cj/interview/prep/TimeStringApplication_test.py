@@ -1,5 +1,6 @@
 import nose.tools
-import TimeStringApplication
+from TimeStringApplication import TimeStringApplication
 
 def test_something():
-    assert True == True
+    flux_capacitor = TimeStringApplication()
+    assert flux_capacitor.mr_fusion == "1.21 gigawats!"
