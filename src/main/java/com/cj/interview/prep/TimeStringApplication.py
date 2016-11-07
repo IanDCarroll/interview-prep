@@ -24,14 +24,19 @@
 
 class TimeStringApplication(object):
     def flux_capacitor(self, time_string):
+
         time_array = time_string.split(' ')
         raw_seconds = 0
         for i in range(0, len(time_array)):
             time_unit = time_array[i].split(':')
             raw_seconds += int(time_unit[1])
             raw_seconds += int(time_unit[0]) * 60
+
+
+        seconds_in_a_minute = 60
+        seconds_in_an_hour = 3600
         seconds = str(raw_seconds % 60)
-        minutes = str(raw_seconds / 60 % 60)
-        hours = str(raw_seconds / 3600 % 60)
+        minutes = str(raw_seconds / seconds_in_a_minute % 60)
+        hours = str(raw_seconds / seconds_in_an_hour % 60)
         temporal_conversion = hours + ":" + minutes + ":" + seconds
         return temporal_conversion
