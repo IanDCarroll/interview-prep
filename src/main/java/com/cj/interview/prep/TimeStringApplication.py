@@ -1,6 +1,6 @@
-package com.cj.interview.prep;
-/*
+import datetime
 
+'''
 ## Goal
 - During the coding screen, the goal is for us to experience what it is like to code with you.
 - In preparation for the screen, we want you to have an idea of the type of coding we do.
@@ -20,10 +20,8 @@ package com.cj.interview.prep;
 
 ## For More Information
 - Do some research on "test driven development," focusing on how this style of testing can change your design
+'''
 
-*/
 
-public class TimeStringApplication {
-    public static void main(String[] args) {
-    }
-}
+class TimeStringApplication(object):
+    pass
